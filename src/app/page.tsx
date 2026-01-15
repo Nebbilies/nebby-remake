@@ -1,13 +1,13 @@
 import Image from "next/image";
 import {motion} from "framer-motion";
-import AboutSection from "@/app/_components/AboutSection";
+import AboutSection from "@/app/_components/AboutSection/AboutSection";
 
 export default function Home() {
   return (
       <div className={'relative min-h-screen'}>
           <div
               className="fixed -z-10 opacity-10 inset-0 bg-cover bg-center grayscale"
-              style={{ backgroundImage: 'url("/image/background/our-identity-flip.jpg")' }}
+              style={{ backgroundImage: 'url("/image/background/our-identity.gif")' }}
           />
           <div
               className="fixed inset-0 opacity-40"
@@ -17,7 +17,7 @@ export default function Home() {
               }}
           />
           <div className="relative h-screen items-center justify-center w-full bg-cover"
-               style={{backgroundImage: 'url("/image/background/our-identity-flip.jpg")'}}>
+               style={{backgroundImage: 'url("/image/background/our-identity.gif")'}}>
               <div className="absolute w-full h-full bg-gradient-to-r from-black/90 from-25% via-black/75 via-50% to-transparent to-100% opacity-90 -z-0"></div>
               <div className="text-primary-content w-full h-full flex z-10 relative">
                   <div className={'w-1/2 flex flex-col justify-center items-center h-full'}>
