@@ -3,6 +3,7 @@
 
 import { motion } from 'framer-motion';
 import Image from "next/image";
+import ToolsArea from "@/app/_components/AboutSection/ToolsArea";
 
 
 export default function AboutSection() {
@@ -102,9 +103,10 @@ export default function AboutSection() {
                 <p className="text-lg mb-4">
                     I&#39;m currently learning about backend along with DevOps to become a more flexible developer. I also enjoy surfing the web for new technologies and best practices to improve my skills.
                 </p>
-                <p className="text-lg">
+                <p className="text-lg mb-6">
                     Outside of coding, I love exploring <strong className={'text-accent'}>Japanese culture & language</strong>, listening to music, and playing rhythm games.
                 </p>
+                <ToolsArea/>
             </div>
         </div>
       </div>
