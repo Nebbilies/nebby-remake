@@ -6,7 +6,7 @@ export default function ToolsArea() {
             <div className={'flex flex-wrap w-full gap-2'}>
                 {tools.map((tool) => {
                     return (
-                        <div className={'badge badge-lg badge-neutral font-semibold'} key={tool}>
+                        <div className={'badge badge-lg  font-semibold badge-outline'} key={tool}>
                             {tool}
                         </div>
                     )
