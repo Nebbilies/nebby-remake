@@ -36,6 +36,10 @@ export default function Home() {
         onDotClick={scrollToSection}
       />
       <div
+        className="fixed -z-10 opacity-10 inset-0 bg-cover bg-center grayscale"
+        style={{ backgroundImage: 'url("/image/background/our-identity.gif")' }}
+      />
+      <div
         className="fixed inset-0 opacity-40 -z-10"
         style={{
           backgroundImage:
