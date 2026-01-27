@@ -14,7 +14,7 @@ export default function AboutSection() {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-5 py-20 h-screen snap-start">
+    <div className="max-w-7xl mx-auto px-5 py-15 h-screen snap-start flex flex-col justify-center">
       <div className="flex items-center gap-8 mb-8">
         <div className="relative overflow-hidden">
           <motion.div
