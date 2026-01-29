@@ -51,12 +51,6 @@ export default function ScrollDots({
     />
   ));
 
-  const smoothProgress = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 20,
-  });
-  const lineHeight = useTransform(smoothProgress as any, [0, 1], [0, 100]);
-
   return (
     <div className="fixed right-8 top-1/2 -translate-y-1/2 flex flex-col gap-4 z-50 cursor-pointer">
       {dots}
