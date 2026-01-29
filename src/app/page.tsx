@@ -2,12 +2,14 @@
 
 import Image from "next/image";
 import { motion, useScroll } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import AboutSection from "@/app/_components/AboutSection/AboutSection";
 import ProjectSection from "@/app/_components/ProjectSection/ProjectSection";
 import ScrollDots from "./_components/ScrollDots/ScrollDots";
+import Intro from "./_components/Intro/Intro";
 
 export default function Home() {
+  const [isIntroFinished, setIsIntroFinished] = useState<boolean>(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     container: containerRef,
@@ -30,6 +32,7 @@ export default function Home() {
         "relative h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth"
       }
     >
+      <Intro isFinished={isIntroFinished} />
       <ScrollDots
         totalSections={3}
         scrollYProgress={scrollYProgress}
